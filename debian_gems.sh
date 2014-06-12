@@ -23,5 +23,12 @@ apt-get update
 aptitude search shimmer
 p   shimmer-themes-greybird         - Greybird Theme from the Shimmer Project
 apt-get install shimmer-themes-greybird
+>>Applications Menu > Settings > Appearance
 
-# Applications Menu > Settings > Appearance
+## speed-up xfce gui
+Open the file named .gtkrc-2.0 in the home directory. If the file does not exist, then create one.
+gtk-menu-popup-delay = 0
+gtk-menu-popdown-delay = 0
+gtk-menu-bar-popup-delay = 0
+gtk-enable-animations = 0
+gtk-timeout-expand = 10
