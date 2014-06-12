@@ -23,3 +23,5 @@ apt-get update
 aptitude search shimmer
 p   shimmer-themes-greybird         - Greybird Theme from the Shimmer Project
 apt-get install shimmer-themes-greybird
+
+# Applications Menu > Settings > Appearance
