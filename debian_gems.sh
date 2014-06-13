@@ -35,8 +35,22 @@ gtk-timeout-expand = 10
 
 # apt-get usage
 
-apt-get remove --purge package
-apt-get clean
+apt-get help
+
+apt-get install {package}
+
+apt-get remove {package}
+
+apt-get --purge remove {package}
+
+apt-get update
+apt-get upgrade
+
+apt-get update
+apt-get dist-upgrade
+
+apt-cache search keyword
+apt-cache show package_name
 
 
 
