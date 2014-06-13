@@ -32,3 +32,11 @@ gtk-menu-popdown-delay = 0
 gtk-menu-bar-popup-delay = 0
 gtk-enable-animations = 0
 gtk-timeout-expand = 10
+
+# apt-get usage
+
+apt-get remove --purge package
+apt-get clean
+
+
+
