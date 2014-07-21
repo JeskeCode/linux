@@ -1,0 +1,2 @@
+colo corporation
+syntax on
