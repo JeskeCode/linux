@@ -51,5 +51,12 @@ apt-get dist-upgrade
 apt-cache search keyword
 apt-cache show package_name
 
+If you want a package-based one, you can use Linux Mint's Debian package repo. 
+To do this, add the following line to your /etc/apt/sources.list file:
 
+deb http://packages.linuxmint.com debian import
+And add the GPG key for that repo. Then, just run:
+
+apt-get update
+apt-get install firefox
 
