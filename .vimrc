@@ -9,4 +9,4 @@ colo corporation
 
 
 set textwidth=79
-set autoinden
+set autoindent
