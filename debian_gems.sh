@@ -46,3 +46,6 @@ apt-key add ./3EE67F3D0FF405B2.gpg
 rm ./3EE67F3D0FF405B2.gpg
 apt-get install firefox
 
+#install python easy tools
+apt-get install python-setuptools
+easy_install pip
