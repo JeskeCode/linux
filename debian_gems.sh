@@ -1,14 +1,17 @@
-# vm-tools
-
-mount /dev/cdrom /mnt
-tar xzf /mnt/VMwareTools*
-umount /mnt
+#install source headers
 apt-get update
 apt-get install gcc make linux-headers-$(uname -r)
-cd vmware-tools-distrib
-./vmware-install.pl
-rm -rf vmware-tools-distrib
-shutdown -r now
+
+#fix “Device not managed” error in network-manager
+If you want Network Manager to handle interfaces that are enabled in /etc/network/interfaces:
+Set managed=true in /etc/NetworkManager/NetworkManager.conf. So this file looks like:
+  
+[main]
+plugins=ifupdown,keyfile
+[ifupdown]
+managed=true
+
+service network-manager restart
 
 #install gnome elgant theme
 sudo add-apt-repository ppa: elegant-gnome / ppa 
