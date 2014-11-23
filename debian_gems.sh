@@ -19,25 +19,12 @@ sudo apt-get install gnome-elegant
 apt-get install xfce4
 apt-get install xfce4-goodies
 
-## speed-up xfce gui
-Open the file named .gtkrc-2.0 in the home directory. If the file does not exist, then create one.
-gtk-menu-popup-delay = 0
-gtk-menu-popdown-delay = 0
-gtk-menu-bar-popup-delay = 0
-gtk-enable-animations = 0
-gtk-timeout-expand = 10
-
-# apt-get usage
-apt-get help
-apt-get install {package}
-apt-get remove {package}
-apt-get --purge remove {package}
-apt-get update
-apt-get upgrade
-apt-get update
-apt-get dist-upgrade
-apt-cache search keyword
-apt-cache show package_name
+#install openvpn
+apt-get install network-manager-openvpn-gnome
+wget https://www.privateinternetaccess.com/openvpn/openvpn.zip
+mv openvpn.zip /etc/openvpn
+cd /etc/openvpn
+unzip openvpn.zip
 
 #install firefox
 apt-get remove iceweasel
