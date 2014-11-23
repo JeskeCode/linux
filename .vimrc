@@ -5,7 +5,7 @@ set shiftwidth=4
 
 filetype indent on
 syntax on
-colo corporation
+color grb256
 
 
 set textwidth=79
