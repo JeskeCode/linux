@@ -10,6 +10,10 @@ cd vmware-tools-distrib
 rm -rf vmware-tools-distrib
 shutdown -r now
 
+#install gnome elgant theme
+sudo add-apt-repository ppa: elegant-gnome / ppa 
+sudo apt-get update 
+sudo apt-get install gnome-elegant
 
 # xfce4 GUI
 apt-get install xfce4
