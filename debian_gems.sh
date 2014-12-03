@@ -13,10 +13,9 @@ managed=true
 
 service network-manager restart
 
-#install gnome elgant theme
-sudo add-apt-repository ppa: elegant-gnome / ppa 
-sudo apt-get update 
-sudo apt-get install gnome-elegant
+#install cinnamon (and remove)
+apt-get install kali-defaults kali-root-login desktop-base cinnamon
+apt-get remove cinnamon
 
 # xfce4 GUI
 apt-get install xfce4
