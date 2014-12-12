@@ -49,3 +49,9 @@ echo -e "\ndeb http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt 
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com C1289A29
 apt-get update
 apt-get install firefox-mozilla-build
+
+# docky
+apt-get install docky
+Unzip to ~/.local/share/docky/themes #(create the 'themes' directory if it's not there). 
+# For all users /usr/share/docky/themes.
+
