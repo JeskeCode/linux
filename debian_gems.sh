@@ -55,5 +55,7 @@ apt-get install docky
 Unzip to ~/.local/share/docky/themes #(create the 'themes' directory if it's not there). 
 # For all users /usr/share/docky/themes.
 
-# gnome classic with effects default login
-/usr/lib/lightdm/lightdm-set-defaults -s gnome-classic
+# add new user to sudo
+adduser jdoe
+passwd jdoe
+usermod -aG sudo jdoe
