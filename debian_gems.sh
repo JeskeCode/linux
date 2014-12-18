@@ -59,3 +59,13 @@ Unzip to ~/.local/share/docky/themes #(create the 'themes' directory if it's not
 adduser jdoe
 passwd jdoe
 usermod -aG sudo jdoe
+
+# system tools
+apt-get install gparted
+apt-get install lshw lshw-gtk
+apt-get install hardinfo
+apt-get install sysinfo
+apt-get install smartmontools
+apt-get install gsmartcontrol
+
+
