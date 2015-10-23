@@ -13,6 +13,10 @@ managed=true
 
 service network-manager restart
 
+# add to /etc/modprobe.d/blacklist.conf:
+# blacklist i2c_piix4
+# it will fix virtual box boot error
+
 #install cinnamon (and remove)
 apt-get install kali-defaults kali-root-login desktop-base cinnamon
 apt-get remove cinnamon
