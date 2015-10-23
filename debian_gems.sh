@@ -13,7 +13,7 @@ managed=true
 
 service network-manager restart
 
-# add to /etc/modprobe.d/blacklist.conf:
+# add to /etc/modprobe.d/fbdev-blacklist.conf:
 # blacklist i2c_piix4
 # it will fix virtual box boot error
 
