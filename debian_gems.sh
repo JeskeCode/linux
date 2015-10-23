@@ -13,9 +13,10 @@ managed=true
 
 service network-manager restart
 
-# add to /etc/modprobe.d/fbdev-blacklist.conf:
+# fix vobx boot error
+gedit /etc/modprobe.d/fbdev-blacklist.conf:
 # blacklist i2c_piix4
-# it will fix virtual box boot error
+
 
 #install cinnamon (and remove)
 apt-get install kali-defaults kali-root-login desktop-base cinnamon
@@ -65,11 +66,27 @@ passwd jdoe
 usermod -aG sudo jdoe
 
 # system tools
+apt-get install sudo
+apt-get install qbittorrent
 apt-get install gparted
 apt-get install lshw lshw-gtk
 apt-get install hardinfo
 apt-get install sysinfo
 apt-get install smartmontools
 apt-get install gsmartcontrol
+
+sudo apt-get install network-manager-openvpn
+sudo apt-get install network-manager-openvpn-gnome
+/etc/init.d/network-manager restart
+
+wget https://www.privateinternetaccess.com/installer/install_ubuntu.sh 
+sudo sh ./install_ubuntu.sh
+
+cd /opt/openvpn/
+wget https://www.privateinternetaccess.com/openvpn/openvpn.zip
+unzip openvpn.zip
+
+/etc/init.d/network-manager restart
+
 
 
