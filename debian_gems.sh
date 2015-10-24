@@ -14,7 +14,7 @@ managed=true
 service network-manager restart
 
 # fix vobx boot error
-gedit /etc/modprobe.d/fbdev-blacklist.conf:
+gedit /etc/modprobe.d/fbdev-blacklist.conf
 # blacklist i2c_piix4
 
 
