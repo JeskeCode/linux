@@ -88,5 +88,4 @@ unzip openvpn.zip
 
 /etc/init.d/network-manager restart
 
-
-
+chmod +x filename.sh
