@@ -33,6 +33,14 @@ mv openvpn.zip /etc/openvpn
 cd /etc/openvpn
 unzip openvpn.zip
 
+wget https://www.privateinternetaccess.com/installer/install_ubuntu.sh 
+sudo sh ./install_ubuntu.sh
+sudo service network-manager restart
+
+Share folder
+sudo mount -t vboxsf Downloads /home/nomad/WinDownloads
+/etc/init.d/network-manager restart
+
 #install firefox
 apt-get remove iceweasel
 add to /etc/apt/sources.list file:	
